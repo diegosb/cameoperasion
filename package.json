@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "start": "snowpack dev",
+    "start": "snowpack dev --reload",
     "build": "snowpack build",
-    "test": "jest"
+    "test": "jest",
+    "fix": "npx eslint --fix \"{,!(node_modules|public)/**/}*.{js,svelte}\"",
+    "format": "npx prettier --write \"{,!(node_modules|public)/**/}*.{js,svelte}\""
   },
   "dependencies": {
     "svelte": "^3.24.0"
@@ -11,7 +13,12 @@
     "@snowpack/app-scripts-svelte": "^1.8.5",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/svelte": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-svelte3": "^2.7.3",
     "jest": "^26.2.2",
+    "prettier": "^2.1.2",
+    "prettier-plugin-svelte": "^1.4.0",
     "snowpack": "^2.12.0",
     "svelte-check": "^1.0.0"
   }

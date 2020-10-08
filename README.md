@@ -1,4 +1,6 @@
-# New Project
+# Svelte Project with Snowpack
+
+Check the website running on https://cameoperasion.vercel.app/
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
